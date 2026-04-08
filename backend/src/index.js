@@ -12,7 +12,13 @@ const CLIENT_URL = process.env.CLIENT_URL || "http://localhost:5173";
 
 app.use(
   cors({
-    origin: CLIENT_URL,
+    origin: function(origin, callback) {
+      if (!origin) return callback(null, true);
+      const allowed = CLIENT_URL.replace(/\/$/, "");
+      const incoming = origin.replace(/\/$/, "");
+      if (incoming === allowed) return callback(null, true);
+      callback(new Error("Not allowed by CORS"));
+    },
     credentials: false,
   }),
 );
