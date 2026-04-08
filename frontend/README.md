@@ -1,8 +1,11 @@
-# React + Vite
+# Startup Idea Validator (Frontend)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React dashboard for submitting startup ideas, viewing AI-generated reports, filtering saved ideas, and exporting reports to PDF.
 
-Currently, two official plugins are available:
+## Run locally
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. Copy `.env.example` to `.env`
+2. Install deps:
+   - `npm install`
+3. Start dev server:
+   - `npm run dev`

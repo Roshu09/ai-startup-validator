@@ -1,7 +1,7 @@
 {
-  "name": "chat-app",
+  "name": "startup-idea-validator",
   "version": "1.0.0",
-  "description": "",
+  "description": "AI-powered startup idea validator assignment project",
   "main": "index.js",
   "scripts": {
     "build": "npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend",

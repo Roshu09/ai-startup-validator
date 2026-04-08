@@ -1,3 +1,43 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #020617;
+}
+
+/* Lightweight theme override without rewriting component classes */
+.theme-light body {
+  background-color: #f8fafc;
+}
+
+.theme-light .bg-slate-950 {
+  background-color: #f8fafc !important;
+}
+.theme-light .bg-slate-900 {
+  background-color: #ffffff !important;
+}
+.theme-light .bg-slate-900\/60 {
+  background-color: rgba(255, 255, 255, 0.85) !important;
+}
+.theme-light .bg-slate-800 {
+  background-color: #e2e8f0 !important;
+}
+.theme-light .border-slate-800,
+.theme-light .border-slate-700 {
+  border-color: #cbd5e1 !important;
+}
+.theme-light .text-slate-100 {
+  color: #0f172a !important;
+}
+.theme-light .text-slate-200,
+.theme-light .text-slate-300,
+.theme-light .text-slate-400 {
+  color: #334155 !important;
+}
